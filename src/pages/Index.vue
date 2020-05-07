@@ -16,7 +16,9 @@
 
       </template>
     </simple-header>
-    <h1>Hello, World!</h1>
+    <default-page>
+      <h1>Hello, World!</h1>  
+    </default-page>
   </Layout>
 </template>
 
@@ -28,14 +30,6 @@
   }
 </script>
 
-<style lang="scss">
-@import "src/sass/styles"; // Remove this!
+<style lang="stylus">
 
-h1 {
-  color: $color;
-}
-
-.header {
-  background: #001a39;  
-}
 </style>
