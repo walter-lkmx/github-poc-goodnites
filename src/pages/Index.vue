@@ -17,7 +17,13 @@
       </template>
     </simple-header>
     <default-page>
-      <h1>Hello, World!</h1>  
+      <simple-hero>
+        <g-image src="~/assets/logo.png" alt="Goodnites"></g-image>
+        <section class="message">
+          <h1>Hola esto es un mensaje</h1>
+        </section>
+      </simple-hero>
+      <!-- no pasar de esta línea -->
     </default-page>
   </Layout>
 </template>
