@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "key":  "que-es-enuresis",
+      "name": "¿Qué es enuresis?",
+      "link": "/que-es-enuresis"
+    },
+    {
+      "key":  "ropa-interior-goodnites",
+      "name": "Ropa Interior Goodnites®",
+      "link": "/ropa-interior-goodnites"
+    },
+    {
+      "key":  "cori-y-morfi",
+      "name": "Cori y Morfi",
+      "link": "/cori-y-morfi"
+    },
+    {
+      "key":  "solicita-tu--muestra-gratis",
+      "name": "Solicita tu muestra gratis",
+      "link": "/solicita-tu--muestra-gratis"
+    }
+  ]
+}
