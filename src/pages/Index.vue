@@ -24,17 +24,17 @@
           <h5>Conoce más de este padecimiento</h5>
         </section>
       </simple-hero>
-      <text-banner class="title__what-is">
+      <text-banner class="content__what-is">
         <h1>¿Qué es enuresis?</h1>
       </text-banner>
-      <text-banner class="title__enuresis-is">
+      <text-banner class="content__enuresis-is">
         <g-image src="~/assets/gota.png" alt="Goodnites"></g-image>
         <h4>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h4>
       </text-banner>
       <twin-columns class="">
         <template v-slot:left>
           <h4>Las causas pueden ser</h4>
-          <ul>
+          <ul class="list__causes">
             <li>Factores psicológicos</li>
             <li>Factores genéticos</li>
             <li>Factores hormonales</li>
@@ -49,7 +49,7 @@
           <h4>la mayoría del sexo masculino</h4>
         </template>
       </twin-columns>
-      <text-banner class="title__more-about">
+      <text-banner class="content__more-about">
         <g-image src="~/assets/ojo-dormido.png" alt="Goodnites"></g-image>
         <h4>Conoce más de este padecimiento en el video de la conferencia Goodnites con nuestras especialistas.</h4>
       </text-banner>
@@ -58,8 +58,8 @@
       </text-banner>
       <twin-columns>
         <template v-slot:left>
-          <ul class="how">
-            <h4>¿Cómo puedes ayudar a tu hijo?</h4>
+          <h4>¿Cómo puedes ayudar a tu hijo?</h4>
+          <ul class="list__how-to-help">
             <li><span>Consulta</span> a tu médico</li>
             <li><span>Conoce Coodnites</span> tu aliado para mantener su cama seca</li>
             <li><span>Con la ayuda de Cori</span>, tu pequeño aprenderá a vencer a la enuresis</li>
@@ -81,7 +81,7 @@
           <g-image src="~/assets/calzones-goodnites.png" alt="Goodnites"></g-image>
         </template>
         <template v-slot:right>
-          <ul>
+          <ul class="list__features">
             <li>Discreto</li>
             <li>Máxima absorción</li>
             <li>No escurre</li>
@@ -96,17 +96,19 @@
       </text-banner>
       <twin-columns class="">
         <template v-slot:left>
+          <div></div>
           <g-image src="~/assets/goodnites.png" alt="Goodnites"></g-image>
         </template>
         <template v-slot:right>
           <g-image src="~/assets/tallas-goodnites.png" alt="Goodnites"></g-image>
+          <div></div>
         </template>
       </twin-columns>
        <text-banner class="free-sample">
         <p class="light-gray">Solicita tu muestra gratis</p>
         <hr>
       </text-banner>
-      <text-banner class="title__cori-morfi">
+      <text-banner class="content__cori-morfi">
         <h1>Conoce a<br>Cori y Morfi</h1>
         <h2>los aliados de tu hijo contra la enuresis</h2>
       </text-banner>
@@ -185,7 +187,7 @@
   }
 }
 
-.title {
+.content {
   &__what-is {
     background-image: url("../assets/enuresis_portada.png");
     background-size: auto 100%;
@@ -199,16 +201,10 @@
         text-align: left;
       } 
   }
-  &__enuresis-is {
-    h4 {
-      color: white;
-   }
-
-  }
-  &__more-about {
+  &__enuresis-is, &__more-about {
     .slim-column {
-    display: grid;
-    grid-template-columns: rem(50px) 1fr;
+      grid-template-columns: auto auto;
+      grid-column-gap: rem(16px);
       h4 {
         color: white;
         text-align: left;
@@ -233,20 +229,6 @@
     color: #fae736;
     text-transform: uppercase;
     font-weight: 900;
-  }
-  ul {
-    li {
-      color: white;
-      span {
-        color: #70c5c8;
-      }
-      &:before {
-        position: absolute;
-        left: rem(5px);
-        content: "\2713";
-        color: #70c5c8;
-      }
-    }
   }
 }
 
@@ -276,6 +258,21 @@
     }
   }
 }
+
+ul {
+    li {
+      color: white;
+      span {
+        color: #70c5c8;
+      }
+      &:before {
+        position: absolute;
+        left: rem(5px);
+        content: "\2713";
+        color: #70c5c8;
+      }
+    }
+  }
 
 .footer {
   background-color: #00263a;
