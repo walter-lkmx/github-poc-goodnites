@@ -20,15 +20,15 @@
       <simple-hero>
         <section class="message">
           <h2>Si tu hijo tiene más de 5 años y se hace pipí en la cama, es posible que padezca</h2>
-          <h1>ENDURESIS</h1>
+          <h1>ENURESIS</h1>
           <h6>Conoce más de este padecimiento</h6>
         </section>
       </simple-hero>
       <text-banner class="title__what">
-        <h2>¿Qué es enduresis?</h2>
+        <h1>¿Qué es enuresis?</h1>
       </text-banner>
       <text-banner>
-        <h2>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enduresis nocturna, a partir de los 5 años de edad.</h2>
+        <h2>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h2>
       </text-banner>
       <text-banner>
         <h2>Conoce más de este padecimiento en el video de la conferencia Goodnites con nuestras especialistas.</h2>
@@ -37,7 +37,7 @@
         <h2>Video</h2>
       </text-banner>
       <text-banner class="title__how">
-        <h2>¿Cómo puedes ayudar a tu hijo?</h2>
+        <h1>¿Cómo puedes ayudar a tu hijo?</h1>
       </text-banner>
       <twin-columns class="contact">
         <template v-slot:left>
@@ -77,15 +77,18 @@
        <text-banner-no-column>
         <h2>Solicita tu muestra gratis</h2>
       </text-banner-no-column>
-      <text-banner>
-        <h2>Conoce a<br>Cori y Morfi</h2>
-        <h3>los aliados de tu hijo contra la enuresis</h3>
+      <text-banner class="title__cori-morfi">
+        <h1>Conoce a<br>Cori y Morfi</h1>
+        <h2>los aliados de tu hijo contra la enuresis</h2>
       </text-banner>
       <text-banner>
         <h2>Video</h2>
       </text-banner>
       <text-banner class="footer">
-        <h2>Video</h2>
+        <g-image src="~/assets/kimberly-clark-logo.png" alt="Goodnites"></g-image>
+        <p>*Pañal tipo calzoncito desechable.<br>El desarrollo de este sitio es propiedad de Kimberly-Clark de México, S.A.B. de C.V., sus subsidiarias o afiliadas. Las marcas son propiedad de Kimberly-Clark Worldwide, Inc. <br>Tu visita a este sitio y el subsecuente uso de la información contenida en él están sujetos a los términos de nuestra <a href="https://www.kimberly-clark.com.mx/legal.htm" target="_blank">Declaración Legal</a>. Por favor revisa nuestro <a href="https://www.kimberly-clark.com.mx/politica.htm" target="_blank">Aviso de Privacidad</a>. <br>Este sitio contiene enlaces a otras páginas operadas por terceras empresas, Kimberly-Clark de México S.A.B. de C.V. no se hace responsable por el contenido de las mismas ni por las fallas en su funcionamiento.
+		Contáctanos vía telefónica desde la <strong>Ciudad de México <a href="tel:52827328">5282-7328</a> y del interior de la República 
+	<a href="tel:8004001300">800-400-1300</a></strong></p>
       </text-banner>
       <!-- no pasar de esta línea -->
     </default-page>
@@ -107,6 +110,7 @@
   background-position: center center;
   .message {
     text-align: center;
+    font-family: $text-font;
     h2 {
       color: white;
       font-weight: bold;
@@ -123,22 +127,51 @@
 
 .title {
   &__what {
-    slim-column {
-      h2 {
+    background-image: url("../assets/enuresis_portada.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    .slim-column {
+      h1 {
         color: #70c5c8;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 900;
       }
     }
   }
   &__how {
-    slim-column {
-      h2 {
+    .slim-column {
+      h1 {
         color: #fae736;
         text-transform: uppercase;
+        font-weight: 900;
+      }
+    }
+  }
+  &__cori-morfi {
+    .slim-column {
+      h1 {
+        color: #f18b6c;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+      h2 {
+        color: #f18b6c;
         font-weight: bold;
       }
     }
+  }
+}
+
+.footer {
+  background-color: #00263a;
+  color: white;
+  text-align: center;
+  img {
+    margin: 0 auto;
+  }
+  a {
+    color: #70c5c8;
+    text-decoration: none;
   }
 }
 
