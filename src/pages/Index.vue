@@ -181,6 +181,12 @@
   display: inline-grid;
   grid-template-columns: auto;
   grid-column-gap: $gutter-xlarge;
+  a {
+    color: white;
+    &:hover {
+      color: #70c5c8;
+    }
+  }
 }
 
 .hero {
