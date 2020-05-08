@@ -28,17 +28,37 @@
         <h1>¿Qué es enuresis?</h1>
       </text-banner>
       <text-banner class="title__enuresis-is">
+        <g-image src="~/assets/gota.png" alt="Goodnites"></g-image>
         <h4>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h4>
       </text-banner>
+      <ul>
+        <h4>Las causas pueden ser</h4>
+        <li>Factores psicológicos</li>
+        <li>Factores genéticos</li>
+        <li>Factores hormonales</li>
+        <li>Alteraciones del sueño</li>
+        <li>Enfermedades del tracto</li>
+      </ul>
+      <div class="statistics">
+        <h4>Actualmente en México existen</h4>
+        <h2>+ 1.800.000</h2>
+        <h4>niños con enuresis</h4>
+        <h4>la mayoría del sexo masculino</h4>
+      </div>
       <text-banner class="title__more-about">
+        <g-image src="~/assets/ojo-dormido.png" alt="Goodnites"></g-image>
         <h4>Conoce más de este padecimiento en el video de la conferencia Goodnites con nuestras especialistas.</h4>
       </text-banner>
       <text-banner>
         <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/5f23QZUUtQE?rel=0" allowfullscreen style="padding: 0 30px; "></iframe>
       </text-banner>
-      <text-banner class="title__how">
-        <h1>¿Cómo puedes ayudar a tu hijo?</h1>
-      </text-banner>
+      <ul class="how">
+        <h4>¿Cómo puedes ayudar a tu hijo?</h4>
+        <li><span>Consulta</span> a tu médico</li>
+        <li><span>Conoce Coodnites</span> tu aliado para mantener su cama seca</li>
+        <li><span>Con la ayuda de Cori</span>, tu pequeño aprenderá a vencer a la enuresis</li>
+      </ul>
+      <g-image src="~/assets/Cori_lampara.png" alt="Goodnites"></g-image>
       <twin-columns class="contact">
         <template v-slot:left>
 
@@ -55,6 +75,14 @@
         <h4>La ropa interior Goodnites será el aliado perfecto</h4>
         <h4 class="lowercase-white">para mantener seca su cama</h4>
       </text-banner>
+      <g-image src="~/assets/calzones-goodnites.png" alt="Goodnites"></g-image>
+      <ul>
+        <li>Discreto</li>
+        <li>Máxima absorción</li>
+        <li>No escurre</li>
+        <li>Se ajusta perfecto a la cintura</li>
+        <li>No contiene látex</li>
+      </ul>
       <twin-columns class="contact">
         <template v-slot:left>
           <h1>dfhdskfjhsdkf</h1>
@@ -66,6 +94,8 @@
       <text-banner class="choose-size">
         <h4>Elige la talla de acuerdo a la edad<br>
         y peso de tu hijo</h4>
+        <g-image src="~/assets/goodnites.png" alt="Goodnites"></g-image>
+        <g-image src="~/assets/tallas-goodnites.png" alt="Goodnites"></g-image>
       </text-banner>
       <twin-columns class="contact">
         <template v-slot:left>
@@ -155,6 +185,7 @@
 .title {
   &__what {
     background-image: url("../assets/enuresis_portada.png");
+    background-size: 100% rem(216px);
     height: 100%;
     background-repeat: no-repeat;
     .slim-column {
@@ -179,15 +210,6 @@
       }
     }
   }
-  &__how {
-    .slim-column {
-      h1 {
-        color: #fae736;
-        text-transform: uppercase;
-        font-weight: 900;
-      }
-    }
-  }
   &__cori-morfi {
     .slim-column {
       h1 {
@@ -198,6 +220,28 @@
       h2 {
         color: #f18b6c;
         font-weight: bold;
+      }
+    }
+  }
+}
+
+.how {
+  h4 {
+    color: #fae736;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  ul {
+    li {
+      color: white;
+      span {
+        color: #70c5c8;
+      }
+      &:before {
+        position: absolute;
+        left: rem(5px);
+        content: "\2713";
+        color: #70c5c8;
       }
     }
   }
