@@ -17,9 +17,9 @@
       </template>
     </simple-header>
     <default-page>
-      <simple-hero>
+      <simple-hero class="hero">
         <section class="message">
-          <h2>Si tu hijo tiene más de 5 años y se hace pipí en la cama, es posible que padezca</h2>
+          <h2>Si tu hijo tiene más de 5 años y se hace pipí en la <span>cama, es posible que padezca</span></h2>
           <h1>ENURESIS</h1>
           <h5>Conoce más de este padecimiento</h5>
         </section>
@@ -74,8 +74,7 @@
         <hr>
       </text-banner>
       <text-banner class="perfect-ally">
-        <h4>La ropa interior Goodnites será el aliado perfecto</h4>
-        <h4 class="lowercase-white">para mantener seca su cama</h4>
+        <h4>La ropa interior Goodnites será el aliado perfecto <span class="lowercase">para mantener seca su cama</span></h4>
       </text-banner>
       <twin-columns>
         <template v-slot:left>
@@ -134,16 +133,22 @@
 </script>
 
 <style lang="scss" scoped>
-.simple-hero {
+.hero {
   background-image: url("../assets/hero.jpg");
   background-size: cover;
   background-position: center center;
+  height: rem(673px);
+  padding-bottom: $gutter-large;
   .message {
     text-align: center;
     font-family: $text-font;
     h2 {
       color: white;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 2.5rem;
+      span {
+        display: block;
+      }
     }
     h1 {
       color: #70c5c8;
@@ -168,10 +173,8 @@
       color: #70c5c8;
       text-transform: uppercase;
       font-weight: 900;
-      &.lowercase-white {
-        color: white;
+      .lowercase {
         text-transform: lowercase;
-        font-weight: initial;
       }
   }
 }
