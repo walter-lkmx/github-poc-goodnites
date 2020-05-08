@@ -42,11 +42,11 @@
             <li><span>±</span> Enfermedades del tracto</li>
           </ul>
         </template>
-        <template class="" v-slot:right>
+        <template v-slot:right>
           <h4>Actualmente en México existen</h4>
-          <h2>+ 1.800.000</h2>
-          <h4>niños con enuresis</h4>
-          <h4>la mayoría del sexo masculino</h4>
+          <h2 class="statistics-number">+ 1.800.000</h2>
+          <h4 class="lowercase__orange">niños con enuresis</h4>
+          <h4 class="lowercase">la mayoría del sexo masculino</h4>
         </template>
       </twin-columns>
       <text-banner class="content__more-about">
@@ -250,6 +250,18 @@
           color: #70c5c8;
           text-transform: uppercase;
           font-weight: 900;
+          &.lowercase {
+            text-transform: lowercase;
+            &__orange {
+              color: #f18b6c;
+            }
+          }
+        }
+        h2 {
+          &.statistics-number {
+            color: #f18b6c;
+            font-weight: 900;
+          }
         }
       }
     }
@@ -275,6 +287,14 @@
       }
     }
   }
+
+  &__sizes {
+    .left {
+      width: 70%;
+      justify-self: end;
+    }
+  }
+
   &__cori-morfi {
       h1 {
         color: #f18b6c;
