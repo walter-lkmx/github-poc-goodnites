@@ -21,20 +21,20 @@
         <section class="message">
           <h2>Si tu hijo tiene más de 5 años y se hace pipí en la cama, es posible que padezca</h2>
           <h1>ENURESIS</h1>
-          <h6>Conoce más de este padecimiento</h6>
+          <h5>Conoce más de este padecimiento</h5>
         </section>
       </simple-hero>
       <text-banner class="title__what">
         <h1>¿Qué es enuresis?</h1>
       </text-banner>
-      <text-banner>
-        <h2>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h2>
+      <text-banner class="title__enuresis-is">
+        <h4>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h4>
+      </text-banner>
+      <text-banner class="title__more-about">
+        <h4>Conoce más de este padecimiento en el video de la conferencia Goodnites con nuestras especialistas.</h4>
       </text-banner>
       <text-banner>
-        <h2>Conoce más de este padecimiento en el video de la conferencia Goodnites con nuestras especialistas.</h2>
-      </text-banner>
-      <text-banner>
-        <h2>Video</h2>
+        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/5f23QZUUtQE?rel=0" allowfullscreen style="padding: 0 30px; "></iframe>
       </text-banner>
       <text-banner class="title__how">
         <h1>¿Cómo puedes ayudar a tu hijo?</h1>
@@ -47,12 +47,25 @@
 
         </template>
       </twin-columns>
-      <text-banner-no-column>
-        <h2>Solicita tu muestra gratis</h2>
-      </text-banner-no-column>
-      <text-banner>
+      <text-banner class="free-sample">
+        <p class="yellow">Solicita tu muestra gratis</p>
+        <hr>
+      </text-banner>
+      <text-banner class="perfect-ally">
         <h2>La ropa interior Goodnites será el aliado perfecto</h2>
-        <h3>para mantener seca su cama</h3>
+        <h4>para mantener seca su cama</h4>
+      </text-banner>
+      <twin-columns class="contact">
+        <template v-slot:left>
+          <h1>dfhdskfjhsdkf</h1>
+        </template>
+        <template v-slot:right>
+          <h1>dfhdskfjhsdkf</h1>
+        </template>
+      </twin-columns>
+      <text-banner class="choose-size">
+        <h4>Elige la talla de acuerdo a la edad<br>
+        y peso de tu hijo</h4>
       </text-banner>
       <twin-columns class="contact">
         <template v-slot:left>
@@ -62,27 +75,16 @@
 
         </template>
       </twin-columns>
-      <text-banner>
-        <h2>Elige la talla de acuerdo a la edad<br>
-        y peso de tu hijo</h2>
+       <text-banner class="free-sample">
+        <p class="light-gray">Solicita tu muestra gratis</p>
+        <hr>
       </text-banner>
-      <twin-columns class="contact">
-        <template v-slot:left>
-
-        </template>
-        <template v-slot:right>
-
-        </template>
-      </twin-columns>
-       <text-banner-no-column>
-        <h2>Solicita tu muestra gratis</h2>
-      </text-banner-no-column>
       <text-banner class="title__cori-morfi">
         <h1>Conoce a<br>Cori y Morfi</h1>
         <h2>los aliados de tu hijo contra la enuresis</h2>
       </text-banner>
       <text-banner>
-        <h2>Video</h2>
+        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/pHOBv1cmTk8?rel=0" allowfullscreen style="padding: 0 30px; "></iframe>
       </text-banner>
       <text-banner class="footer">
         <g-image src="~/assets/kimberly-clark-logo.png" alt="Goodnites"></g-image>
@@ -98,7 +100,7 @@
 <script>
   export default {
     metaInfo: {
-      title: 'Hello, world!'
+      title: 'Goodnites® ¿Qué es enuresis?'
     }
   }
 </script>
@@ -117,10 +119,20 @@
     }
     h1 {
       color: #70c5c8;
-      font-weight: bold;
+      font-weight: 900;
     }
-    h6 {
+    h5 {
       color: white;
+    }
+  }
+}
+
+.choose-size {
+  .slim-column {
+    h4 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
     }
   }
 }
@@ -135,6 +147,20 @@
         color: #70c5c8;
         text-transform: uppercase;
         font-weight: 900;
+      }
+    }
+  }
+  &__enuresis-is {
+    .slim-column {
+      h4 {
+        color: white;
+      }
+    }
+  }
+  &__more-about {
+    .slim-column {
+      h4 {
+        color: white;
       }
     }
   }
@@ -158,6 +184,33 @@
         color: #f18b6c;
         font-weight: bold;
       }
+    }
+  }
+}
+
+.free-sample {
+  .slim-column {
+    p {
+      display: block;
+      padding: 0.5rem 1rem;
+      margin: 0;
+      text-transform: uppercase;
+      border-radius: rem(21px);
+      &.yellow {
+        background-color: #ffc107;
+      }
+      &.light-gray {
+        background-color: #f8f9fa;
+      }
+    }
+    hr {
+      display: block;
+      border: 0;
+      border-top: 4px dotted #FAE736;
+      width: 30%;
+      margin: 3rem auto;
+      text-align: center;
+      height: 0;
     }
   }
 }
