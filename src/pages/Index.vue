@@ -31,7 +31,7 @@
         <g-image src="~/assets/gota.png" alt="Goodnites"></g-image>
         <h4>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h4>
       </text-banner>
-      <twin-columns class="causes">
+      <twin-columns class="content__causes">
         <template class="left" v-slot:left>
           <h4>Las causas pueden ser:</h4>
           <ul class="list__causes">
@@ -94,7 +94,7 @@
         <h4>Elige la talla de acuerdo a la edad<br>
         y peso de tu hijo</h4>
       </text-banner>
-      <twin-columns class="">
+      <twin-columns class="content__sizes">
         <template class="left" v-slot:left>
           <g-image src="~/assets/goodnites.png" alt="Goodnites"></g-image>
         </template>
@@ -246,7 +246,23 @@
       }
     }
   }
-  
+
+  &__causes {
+    .twins-section {
+      .twins-column {
+        h4 {
+          color: #70c5c8;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+      }
+    }
+    .left {
+      width: 70%;
+      justify-self: end;
+    }
+  }
+
   &__help-your-son {
     .left {
       width: 70%;
