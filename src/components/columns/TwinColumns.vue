@@ -1,11 +1,11 @@
 <template>
   <div class="twin-columns">
     <div class="twins-section twins-section--start">
-      <div class="twins-column twins-column--start">
+      <div class="twins-column left twins-column--end">
         <slot name="left"></slot>
       </div>
     </div>
-    <div class="twins-section twins-section--end">
+    <div class="twins-section right twins-section--end">
       <div class="twins-column twins-column--end">
         <slot name="right"></slot>
       </div>

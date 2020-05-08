@@ -56,13 +56,13 @@
       <text-banner>
         <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/5f23QZUUtQE?rel=0" allowfullscreen style="padding: 0 30px; width:100%; height:400px;"></iframe>
       </text-banner>
-      <twin-columns>
-        <template v-slot:left>
+      <twin-columns class="content__help-your-son">
+        <template class="left" v-slot:left>
           <h4>¿Cómo puedes ayudar a tu hijo?</h4>
           <ul class="list__how-to-help">
-            <li><span>Consulta</span> a tu médico</li>
-            <li><span>Conoce Coodnites</span> tu aliado para mantener su cama seca</li>
-            <li><span>Con la ayuda de Cori</span>, tu pequeño aprenderá a vencer a la enuresis</li>
+            <li><span>✓ Consulta</span> a tu médico</li>
+            <li><span>✓ Conoce Coodnites</span> tu aliado para mantener su cama seca</li>
+            <li><span>✓ Con la ayuda de Cori</span>, tu pequeño aprenderá a vencer a la enuresis</li>
           </ul>
         </template>
         <template v-slot:right>
@@ -211,6 +211,22 @@
       }
     }
   }
+  &__help-your-son {
+    .left {
+      width: 70%;
+      justify-self: end;
+      h4 {
+        font-size: 2.1rem;
+        font-weight: 800;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: #fae736;
+      }
+      li {
+        font-size: $normal-size;
+      }
+    }
+  }
   &__cori-morfi {
       h1 {
         color: #f18b6c;
@@ -263,12 +279,6 @@ ul {
     li {
       color: white;
       span {
-        color: #70c5c8;
-      }
-      &:before {
-        position: absolute;
-        left: rem(5px);
-        content: "\2713";
         color: #70c5c8;
       }
     }
