@@ -42,8 +42,7 @@ query {
 
 <style lang="scss" scoped>
   .default-layout {
-    height: 100%;
-
+    background: $page-background-color;
     display: grid;
     grid-template-rows: 1fr min-content;
   }
