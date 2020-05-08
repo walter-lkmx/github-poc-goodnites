@@ -32,7 +32,7 @@
         <h4>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h4>
       </text-banner>
       <twin-columns class="causes">
-        <template v-slot:left>
+        <template class="left" v-slot:left>
           <h4>Las causas pueden ser:</h4>
           <ul class="list__causes">
             <li><span>±</span> Factores psicológicos</li>
@@ -61,7 +61,7 @@
           <h4>¿Cómo puedes ayudar a tu hijo?</h4>
           <ul class="list__how-to-help">
             <li><span>✓ Consulta</span> a tu médico</li>
-            <li><span>✓ Conoce Coodnites</span> tu aliado para mantener su cama seca</li>
+            <li><span>✓ Conoce Goodnites</span> tu aliado para mantener su cama seca</li>
             <li><span>✓ Con la ayuda de Cori</span>, tu pequeño aprenderá a vencer a la enuresis</li>
           </ul>
         </template>
@@ -77,7 +77,7 @@
         <h4>La ropa interior Goodnites será el aliado perfecto <span class="lowercase">para mantener seca su cama</span></h4>
       </text-banner>
       <twin-columns>
-        <template v-slot:left>
+        <template class="left" v-slot:left>
           <g-image src="~/assets/calzones-goodnites.png" alt="Goodnites"></g-image>
         </template>
         <template v-slot:right>
@@ -95,8 +95,7 @@
         y peso de tu hijo</h4>
       </text-banner>
       <twin-columns class="">
-        <template v-slot:left>
-          <div></div>
+        <template class="left" v-slot:left>
           <g-image src="~/assets/goodnites.png" alt="Goodnites"></g-image>
         </template>
         <template v-slot:right>
@@ -238,6 +237,7 @@
       }
     }
   }
+  
   &__help-your-son {
     .left {
       width: 70%;
@@ -308,7 +308,27 @@
   }
   &__causes {
     li {
+      font-size: rem(32px);
+      span {
+        color: #fae736;
+      }
+    }
+  }
+  &__how-to-help {
+    li {
       color: white;
+      span {
+        color: #70c5c8;
+      }
+    }
+  }
+  &__features {
+    li {
+      color: white;
+      font-size: rem(32px);
+      span {
+        color: #fae736;
+      }
     }
   }
 }
