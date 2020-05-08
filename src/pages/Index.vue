@@ -117,7 +117,7 @@
       <text-banner class="footer">
         <g-image src="~/assets/kimberly-clark-logo.png" alt="Goodnites"></g-image>
         <p>*Pañal tipo calzoncito desechable.<br>El desarrollo de este sitio es propiedad de Kimberly-Clark de México, S.A.B. de C.V., sus subsidiarias o afiliadas. Las marcas son propiedad de Kimberly-Clark Worldwide, Inc. <br>Tu visita a este sitio y el subsecuente uso de la información contenida en él están sujetos a los términos de nuestra <a href="https://www.kimberly-clark.com.mx/legal.htm" target="_blank">Declaración Legal</a>. Por favor revisa nuestro <a href="https://www.kimberly-clark.com.mx/politica.htm" target="_blank">Aviso de Privacidad</a>. <br>Este sitio contiene enlaces a otras páginas operadas por terceras empresas, Kimberly-Clark de México S.A.B. de C.V. no se hace responsable por el contenido de las mismas ni por las fallas en su funcionamiento.
-		Contáctanos vía telefónica desde la <strong>Ciudad de México <a href="tel:52827328">5282-7328</a> y del interior de la República 
+		Contáctanos vía telefónica desde la <strong>Ciudad de México <a href="tel:52827328">5282-7328</a> y del interior de la República
 	<a href="tel:8004001300">800-400-1300</a></strong></p>
       </text-banner>
       <!-- no pasar de esta línea -->
@@ -129,6 +129,34 @@
   export default {
     metaInfo: {
       title: 'Goodnites® ¿Qué es enuresis?'
+    },
+    data() {
+      return {
+        navigation: {
+          "main": [
+            {
+              "key":  "que-es-enuresis",
+              "name": "¿Qué es enuresis?",
+              "link": "/que-es-enuresis"
+            },
+            {
+              "key":  "ropa-interior-goodnites",
+              "name": "Ropa Interior Goodnites®",
+              "link": "/ropa-interior-goodnites"
+            },
+            {
+              "key":  "cori-y-morfi",
+              "name": "Cori y Morfi",
+              "link": "/cori-y-morfi"
+            },
+            {
+              "key":  "solicita-tu--muestra-gratis",
+              "name": "Solicita tu muestra gratis",
+              "link": "/solicita-tu--muestra-gratis"
+            }
+          ]
+        }
+      }
     }
   }
 </script>
@@ -234,7 +262,7 @@
         text-transform: uppercase;
         font-weight: 900;
         text-align: left;
-      } 
+      }
   }
   &__enuresis-is, &__more-about {
     .slim-column {
