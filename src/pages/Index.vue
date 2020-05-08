@@ -76,7 +76,7 @@
       <text-banner class="perfect-ally">
         <h4>La ropa interior Goodnites será el aliado perfecto <span class="lowercase">para mantener seca su cama</span></h4>
       </text-banner>
-      <twin-columns class="content__features">
+      <twin-columns class="features">
         <template class="left" v-slot:left>
           <g-image src="~/assets/calzones-goodnites.png" alt="Goodnites"></g-image>
         </template>
@@ -218,6 +218,10 @@
   }
 }
 
+.features {
+  align-items: center;
+}
+
 .content {
   &__what-is {
     background-image: url("../assets/enuresis_portada.png");
@@ -275,6 +279,9 @@
     .left {
       width: 70%;
       justify-self: end;
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+      }
       h4 {
         font-size: 2.1rem;
         font-weight: 800;
