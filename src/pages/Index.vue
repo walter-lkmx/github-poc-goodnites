@@ -135,6 +135,21 @@
 </script>
 
 <style lang="scss">
+
+.default-page {
+  background: $page-background-image;
+  background-size: contain;
+}
+
+.header {
+  height: rem(88px);
+  &__logo {
+    img {
+      height: rem(60px);
+    }
+  }
+}
+
 .header .main-nav__primary {
   display: inline-grid;
   grid-template-columns: auto;
