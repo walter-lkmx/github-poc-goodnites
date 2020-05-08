@@ -31,15 +31,15 @@
         <g-image src="~/assets/gota.png" alt="Goodnites"></g-image>
         <h4>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h4>
       </text-banner>
-      <twin-columns class="">
+      <twin-columns class="causes">
         <template v-slot:left>
-          <h4>Las causas pueden ser</h4>
+          <h4>Las causas pueden ser:</h4>
           <ul class="list__causes">
-            <li>Factores psicológicos</li>
-            <li>Factores genéticos</li>
-            <li>Factores hormonales</li>
-            <li>Alteraciones del sueño</li>
-            <li>Enfermedades del tracto</li>
+            <li><span>±</span> Factores psicológicos</li>
+            <li><span>±</span> Factores genéticos</li>
+            <li><span>±</span> Factores hormonales</li>
+            <li><span>±</span> Alteraciones del sueño</li>
+            <li><span>±</span> Enfermedades del tracto</li>
           </ul>
         </template>
         <template class="" v-slot:right>
@@ -82,11 +82,11 @@
         </template>
         <template v-slot:right>
           <ul class="list__features">
-            <li>Discreto</li>
-            <li>Máxima absorción</li>
-            <li>No escurre</li>
-            <li>Se ajusta perfecto a la cintura</li>
-            <li>No contiene látex</li>
+            <li><span>●</span> Discreto</li>
+            <li><span>●</span> Máxima absorción</li>
+            <li><span>●</span> No escurre</li>
+            <li><span>●</span> Se ajusta perfecto a la cintura</li>
+            <li><span>●</span> No contiene látex</li>
           </ul>
         </template>
       </twin-columns>
@@ -179,6 +179,18 @@
     }
     h5 {
       color: white;
+    }
+  }
+}
+
+.causes {
+  .twins-section {
+    .twins-column {
+      h4 {
+        color: #70c5c8;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
     }
   }
 }
@@ -286,6 +298,17 @@
       margin: 3rem auto;
       text-align: center;
       height: 0;
+    }
+  }
+}
+
+.list {
+  li {
+    color: white;
+  }
+  &__causes {
+    li {
+      color: white;
     }
   }
 }
