@@ -162,6 +162,11 @@
   background-position: center center;
   height: rem(673px);
   padding-bottom: $gutter-large;
+  .single-column {
+    @media only screen and (max-width: 768px) {
+      grid-auto-rows: initial;
+    }
+  }
   .message {
     text-align: center;
     font-family: $text-font;
