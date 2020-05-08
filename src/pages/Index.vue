@@ -52,8 +52,8 @@
         <hr>
       </text-banner>
       <text-banner class="perfect-ally">
-        <h2>La ropa interior Goodnites será el aliado perfecto</h2>
-        <h4>para mantener seca su cama</h4>
+        <h4>La ropa interior Goodnites será el aliado perfecto</h4>
+        <h4 class="lowercase-white">para mantener seca su cama</h4>
       </text-banner>
       <twin-columns class="contact">
         <template v-slot:left>
@@ -133,6 +133,21 @@
       color: white;
       text-transform: uppercase;
       font-weight: 900;
+    }
+  }
+}
+
+.perfect-ally {
+  .slim-column {
+    h4 {
+      color: #70c5c8;
+      text-transform: uppercase;
+      font-weight: 900;
+      &.lowercase-white {
+        color: white;
+        text-transform: lowercase;
+        font-weight: initial;
+      }
     }
   }
 }
