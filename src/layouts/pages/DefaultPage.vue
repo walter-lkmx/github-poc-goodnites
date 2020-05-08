@@ -6,7 +6,7 @@
 
 <style lang="scss">
   .default-page {
-    background-color: $page-background-color;
+    background-image: $page-background-color;
     display: grid;
     grid-auto-flow: row;
     min-height: 100%;

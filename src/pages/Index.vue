@@ -24,47 +24,49 @@
           <h5>Conoce más de este padecimiento</h5>
         </section>
       </simple-hero>
-      <text-banner class="title__what">
+      <text-banner class="title__what-is">
         <h1>¿Qué es enuresis?</h1>
       </text-banner>
       <text-banner class="title__enuresis-is">
         <g-image src="~/assets/gota.png" alt="Goodnites"></g-image>
         <h4>Descarga completa, involuntaria e inadvertida de orina durante el sueño, también conocida como enuresis nocturna, a partir de los 5 años de edad.</h4>
       </text-banner>
-      <ul>
-        <h4>Las causas pueden ser</h4>
-        <li>Factores psicológicos</li>
-        <li>Factores genéticos</li>
-        <li>Factores hormonales</li>
-        <li>Alteraciones del sueño</li>
-        <li>Enfermedades del tracto</li>
-      </ul>
-      <div class="statistics">
-        <h4>Actualmente en México existen</h4>
-        <h2>+ 1.800.000</h2>
-        <h4>niños con enuresis</h4>
-        <h4>la mayoría del sexo masculino</h4>
-      </div>
+      <twin-columns class="">
+        <template v-slot:left>
+          <h4>Las causas pueden ser</h4>
+          <ul>
+            <li>Factores psicológicos</li>
+            <li>Factores genéticos</li>
+            <li>Factores hormonales</li>
+            <li>Alteraciones del sueño</li>
+            <li>Enfermedades del tracto</li>
+          </ul>
+        </template>
+        <template class="" v-slot:right>
+          <h4>Actualmente en México existen</h4>
+          <h2>+ 1.800.000</h2>
+          <h4>niños con enuresis</h4>
+          <h4>la mayoría del sexo masculino</h4>
+        </template>
+      </twin-columns>
       <text-banner class="title__more-about">
         <g-image src="~/assets/ojo-dormido.png" alt="Goodnites"></g-image>
         <h4>Conoce más de este padecimiento en el video de la conferencia Goodnites con nuestras especialistas.</h4>
       </text-banner>
       <text-banner>
-        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/5f23QZUUtQE?rel=0" allowfullscreen style="padding: 0 30px; "></iframe>
+        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/5f23QZUUtQE?rel=0" allowfullscreen style="padding: 0 30px; width:100%; height:400px;"></iframe>
       </text-banner>
-      <ul class="how">
-        <h4>¿Cómo puedes ayudar a tu hijo?</h4>
-        <li><span>Consulta</span> a tu médico</li>
-        <li><span>Conoce Coodnites</span> tu aliado para mantener su cama seca</li>
-        <li><span>Con la ayuda de Cori</span>, tu pequeño aprenderá a vencer a la enuresis</li>
-      </ul>
-      <g-image src="~/assets/Cori_lampara.png" alt="Goodnites"></g-image>
-      <twin-columns class="contact">
+      <twin-columns>
         <template v-slot:left>
-
+          <ul class="how">
+            <h4>¿Cómo puedes ayudar a tu hijo?</h4>
+            <li><span>Consulta</span> a tu médico</li>
+            <li><span>Conoce Coodnites</span> tu aliado para mantener su cama seca</li>
+            <li><span>Con la ayuda de Cori</span>, tu pequeño aprenderá a vencer a la enuresis</li>
+          </ul>
         </template>
         <template v-slot:right>
-
+          <g-image src="~/assets/Cori_lampara.png" alt="Goodnites"></g-image>
         </template>
       </twin-columns>
       <text-banner class="free-sample">
@@ -75,34 +77,30 @@
         <h4>La ropa interior Goodnites será el aliado perfecto</h4>
         <h4 class="lowercase-white">para mantener seca su cama</h4>
       </text-banner>
-      <g-image src="~/assets/calzones-goodnites.png" alt="Goodnites"></g-image>
-      <ul>
-        <li>Discreto</li>
-        <li>Máxima absorción</li>
-        <li>No escurre</li>
-        <li>Se ajusta perfecto a la cintura</li>
-        <li>No contiene látex</li>
-      </ul>
-      <twin-columns class="contact">
+      <twin-columns>
         <template v-slot:left>
-          <h1>dfhdskfjhsdkf</h1>
+          <g-image src="~/assets/calzones-goodnites.png" alt="Goodnites"></g-image>
         </template>
         <template v-slot:right>
-          <h1>dfhdskfjhsdkf</h1>
+          <ul>
+            <li>Discreto</li>
+            <li>Máxima absorción</li>
+            <li>No escurre</li>
+            <li>Se ajusta perfecto a la cintura</li>
+            <li>No contiene látex</li>
+          </ul>
         </template>
       </twin-columns>
       <text-banner class="choose-size">
         <h4>Elige la talla de acuerdo a la edad<br>
         y peso de tu hijo</h4>
-        <g-image src="~/assets/goodnites.png" alt="Goodnites"></g-image>
-        <g-image src="~/assets/tallas-goodnites.png" alt="Goodnites"></g-image>
       </text-banner>
-      <twin-columns class="contact">
+      <twin-columns class="">
         <template v-slot:left>
-
+          <g-image src="~/assets/goodnites.png" alt="Goodnites"></g-image>
         </template>
         <template v-slot:right>
-
+          <g-image src="~/assets/tallas-goodnites.png" alt="Goodnites"></g-image>
         </template>
       </twin-columns>
        <text-banner class="free-sample">
@@ -114,7 +112,7 @@
         <h2>los aliados de tu hijo contra la enuresis</h2>
       </text-banner>
       <text-banner>
-        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/pHOBv1cmTk8?rel=0" allowfullscreen style="padding: 0 30px; "></iframe>
+        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/pHOBv1cmTk8?rel=0" allowfullscreen style="padding: 0 30px; width:100%; height:400px;"></iframe>
       </text-banner>
       <text-banner class="footer">
         <g-image src="~/assets/kimberly-clark-logo.png" alt="Goodnites"></g-image>
@@ -158,17 +156,14 @@
 }
 
 .choose-size {
-  .slim-column {
     h4 {
       color: white;
       text-transform: uppercase;
       font-weight: 900;
     }
-  }
 }
 
 .perfect-ally {
-  .slim-column {
     h4 {
       color: #70c5c8;
       text-transform: uppercase;
@@ -178,40 +173,40 @@
         text-transform: lowercase;
         font-weight: initial;
       }
-    }
   }
 }
 
 .title {
-  &__what {
+  &__what-is {
     background-image: url("../assets/enuresis_portada.png");
-    background-size: 100% rem(216px);
-    height: 100%;
+    background-size: auto 100%;
+    height: rem(320px);
     background-repeat: no-repeat;
-    .slim-column {
+    background-position: rem(300px);
       h1 {
         color: #70c5c8;
         text-transform: uppercase;
         font-weight: 900;
-      }
-    }
+        text-align: left;
+      } 
   }
   &__enuresis-is {
-    .slim-column {
-      h4 {
-        color: white;
-      }
-    }
+    h4 {
+      color: white;
+   }
+
   }
   &__more-about {
     .slim-column {
+    display: grid;
+    grid-template-columns: rem(50px) 1fr;
       h4 {
         color: white;
+        text-align: left;
       }
     }
   }
   &__cori-morfi {
-    .slim-column {
       h1 {
         color: #f18b6c;
         text-transform: uppercase;
@@ -221,7 +216,6 @@
         color: #f18b6c;
         font-weight: bold;
       }
-    }
   }
 }
 
