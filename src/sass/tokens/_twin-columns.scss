@@ -1,4 +1,6 @@
+@import "~@lkmx/flare/src/sass/tokens/screen";
+
 $twin-column-breakpoint-large: 100%;
 $twin-column-breakpoint-xlarge: 100%;
-$twin-column-breakpoint-xxlarge: rem(1600px / 2);
-$twin-column-breakpoint-xxxlarge:rem(2560px / 2);
+$twin-column-breakpoint-xxlarge: rem($breakpoint-xxlarge / 2);
+$twin-column-breakpoint-xxxlarge: rem($breakpoint-xxxlarge / 2);

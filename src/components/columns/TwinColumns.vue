@@ -74,8 +74,6 @@
           height: $radius-xxxlarge * 5;
         }
       }
-
-      
     }
   }
 </style>
