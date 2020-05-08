@@ -25,7 +25,7 @@
         </section>
       </simple-hero>
       <text-banner class="content__what-is">
-        <h1>¿Qué es enuresis?</h1>
+        <h1>¿Qué es enuresis? </h1>
       </text-banner>
       <text-banner class="content__enuresis-is">
         <g-image src="~/assets/gota.png" alt="Goodnites"></g-image>
