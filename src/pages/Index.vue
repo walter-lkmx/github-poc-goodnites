@@ -132,7 +132,13 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.header .main-nav__primary {
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-column-gap: $gutter-xlarge;
+}
+
 .hero {
   background-image: url("../assets/hero.jpg");
   background-size: cover;
