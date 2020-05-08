@@ -251,17 +251,22 @@
     .twins-section {
       .twins-column {
         h4 {
+          text-align: center;
           color: #70c5c8;
           text-transform: uppercase;
           font-weight: 900;
+          width: 70%;
           &.lowercase {
             text-transform: lowercase;
             &__orange {
               color: #f18b6c;
+              text-transform: lowercase;
             }
           }
         }
         h2 {
+          text-align: center;
+          width: 70%;
           &.statistics-number {
             color: #f18b6c;
             font-weight: 900;
