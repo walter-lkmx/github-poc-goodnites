@@ -31,4 +31,11 @@ export default function (Vue, {router, head, isClient}) {
   Vue.component('NoColumn', NoColumn);
   Vue.component('SingleColumn', SingleColumn);
   Vue.component('SlimColumn', SlimColumn);
+
+  // Add a meta tag
+  head.meta.push({
+    name: 'description',
+    content: 'PoC using Jamstack'
+  })
+  
 }

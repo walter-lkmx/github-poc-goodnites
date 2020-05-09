@@ -54,7 +54,7 @@
         <h4>Conoce más de este padecimiento en el video de la conferencia Goodnites con nuestras especialistas.</h4>
       </text-banner>
       <text-banner>
-        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/5f23QZUUtQE?rel=0" allowfullscreen style="padding: 0 30px; width:100%; height:400px;"></iframe>
+        <iframe title="Qué es la enuresis" class="embed-responsive-item pad" src="https://www.youtube.com/embed/5f23QZUUtQE?rel=0" allowfullscreen style="padding: 0; width:100%; height:400px;"></iframe>
       </text-banner>
       <twin-columns class="content__help-your-son">
         <template class="left" v-slot:left>
@@ -70,7 +70,7 @@
         </template>
       </twin-columns>
       <text-banner class="free-sample">
-        <p class="yellow">Solicita tu muestra gratis</p>
+        <button class="yellow" aria-label="Solicita muestra gratis">Solicita tu muestra gratis</button>
         <hr>
       </text-banner>
       <text-banner class="perfect-ally">
@@ -104,7 +104,7 @@
         </template>
       </twin-columns>
        <text-banner class="free-sample">
-        <p class="light-gray">Solicita tu muestra gratis</p>
+        <button class="light-gray" aria-label="Solicita muestra gratis">Solicita tu muestra gratis</button>
         <hr>
       </text-banner>
       <text-banner class="content__cori-morfi">
@@ -112,13 +112,13 @@
         <h2>los aliados de tu hijo contra la enuresis</h2>
       </text-banner>
       <text-banner>
-        <iframe class="embed-responsive-item pad" src="https://www.youtube.com/embed/pHOBv1cmTk8?rel=0" allowfullscreen style="padding: 0 30px; width:100%; height:400px;"></iframe>
+        <iframe title="Conoce a Cori" class="embed-responsive-item pad" src="https://www.youtube.com/embed/pHOBv1cmTk8?rel=0" allowfullscreen style="padding: 0; width:100%; height:400px;"></iframe>
       </text-banner>
       <text-banner class="footer">
         <g-image src="~/assets/kimberly-clark-logo.png" alt="Goodnites"></g-image>
         <p>*Pañal tipo calzoncito desechable.<br>El desarrollo de este sitio es propiedad de Kimberly-Clark de México, S.A.B. de C.V., sus subsidiarias o afiliadas. Las marcas son propiedad de Kimberly-Clark Worldwide, Inc. <br>Tu visita a este sitio y el subsecuente uso de la información contenida en él están sujetos a los términos de nuestra <a href="https://www.kimberly-clark.com.mx/legal.htm" target="_blank">Declaración Legal</a>. Por favor revisa nuestro <a href="https://www.kimberly-clark.com.mx/politica.htm" target="_blank">Aviso de Privacidad</a>. <br>Este sitio contiene enlaces a otras páginas operadas por terceras empresas, Kimberly-Clark de México S.A.B. de C.V. no se hace responsable por el contenido de las mismas ni por las fallas en su funcionamiento.
-		Contáctanos vía telefónica desde la <strong>Ciudad de México <a href="tel:52827328">5282-7328</a> y del interior de la República
-	<a href="tel:8004001300">800-400-1300</a></strong></p>
+		Contáctanos vía telefónica desde la <strong>Ciudad de México <a href="tel:52827328" rel="noreferrer">5282-7328</a> y del interior de la República
+	<a href="tel:8004001300" rel="noreferrer">800-400-1300</a></strong></p>
       </text-banner>
       <!-- no pasar de esta línea -->
     </default-page>
@@ -221,6 +221,14 @@
   }
 }
 
+
+  .content__causes .left {
+    @media only screen and (max-width: 768px) {
+      width: 90% !important;
+    }  
+  }
+
+
 .causes {
   .twins-section {
     .twins-column {
@@ -284,12 +292,19 @@
   &__causes {
     .twins-section {
       .twins-column {
+        @media only screen and (max-width: 768px) {
+          padding-left: 1rem;
+        }
         h4 {
           text-align: center;
           color: #70c5c8;
           text-transform: uppercase;
           font-weight: 900;
           width: 70%;
+          @media only screen and (max-width: 768px) {
+            width: 90%;
+            text-align: left;
+          }
           &.lowercase {
             text-transform: lowercase;
             &__orange {
@@ -364,7 +379,7 @@
 
 .free-sample {
   .slim-column {
-    p {
+    button {
       display: block;
       padding: 0.5rem 1rem;
       margin: 0;
