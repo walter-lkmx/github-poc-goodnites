@@ -303,7 +303,7 @@
           color: #70c5c8;
           text-transform: uppercase;
           font-weight: 900;
-          width: 70%;
+
           @media only screen and (max-width: 768px) {
             width: 90%;
             text-align: left;
@@ -318,7 +318,7 @@
         }
         h2 {
           text-align: center;
-          width: 70%;
+
           &.statistics-number {
             color: #f18b6c;
             font-weight: 900;
@@ -327,14 +327,14 @@
       }
     }
     .twins-section--start {
-      width: 70%;
+
       justify-self: end;
     }
   }
 
   &__help-your-son {
     .twins-section--start {
-      width: 70%;
+
       justify-self: end;
       @media only screen and (max-width: 768px) {
         width: 90%;
@@ -354,7 +354,7 @@
 
   &__sizes {
     .twins-section--start {
-      width: 70%;
+
       justify-self: end;
     }
   }
