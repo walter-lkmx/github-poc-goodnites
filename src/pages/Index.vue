@@ -16,7 +16,7 @@
 
       </template>
     </simple-header>
-    <default-page>
+    <base-page>
       <simple-hero class="hero">
         <section class="message">
           <h2>Si tu hijo tiene más de 5 años y se hace pipí en la <span>cama, es posible que padezca</span></h2>
@@ -25,7 +25,7 @@
         </section>
       </simple-hero>
       <text-banner class="content__what-is">
-        <h1>¿Qué es enuresis? </h1>
+        <h1 class="title">¿Qué es enuresis? </h1>
       </text-banner>
       <text-banner class="content__enuresis-is">
         <g-image src="~/assets/gota.png" alt="Goodnites"></g-image>
@@ -58,7 +58,7 @@
       </text-banner>
       <twin-columns class="content__help-your-son">
         <template class="left" v-slot:left>
-          <h4>¿Cómo puedes ayudar a tu hijo?</h4>
+          <h4 class="title">¿Cómo puedes ayudar a tu hijo?</h4>
           <ul class="list__how-to-help">
             <li><span>✓ Consulta</span> a tu médico</li>
             <li><span>✓ Conoce Goodnites</span> tu aliado para mantener su cama seca</li>
@@ -74,7 +74,7 @@
         <hr>
       </text-banner>
       <text-banner class="perfect-ally">
-        <h4>La ropa interior Goodnites será el aliado perfecto <span class="lowercase">para mantener seca su cama</span></h4>
+        <h4 class="title">La ropa interior Goodnites será el aliado perfecto <span class="lowercase">para mantener seca su cama</span></h4>
       </text-banner>
       <twin-columns class="features">
         <template class="left" v-slot:left>
@@ -91,7 +91,7 @@
         </template>
       </twin-columns>
       <text-banner class="choose-size">
-        <h4>Elige la talla de acuerdo a la edad<br>
+        <h4 class="title">Elige la talla de acuerdo a la edad<br>
         y peso de tu hijo</h4>
       </text-banner>
       <twin-columns class="content__sizes">
@@ -108,8 +108,8 @@
         <hr>
       </text-banner>
       <text-banner class="content__cori-morfi">
-        <h1>Conoce a<br>Cori y Morfi</h1>
-        <h2>los aliados de tu hijo contra la enuresis</h2>
+        <h1 class="title">Conoce a<br>Cori y Morfi</h1>
+        <h2 class="subtitle">los aliados de tu hijo contra la enuresis</h2>
       </text-banner>
       <text-banner>
         <iframe title="Conoce a Cori" class="embed-responsive-item pad" src="https://www.youtube.com/embed/pHOBv1cmTk8?rel=0" allowfullscreen style="padding: 0; width:100%; height:400px;"></iframe>
@@ -121,7 +121,7 @@
 	<a href="tel:8004001300" rel="noreferrer">800-400-1300</a></strong></p>
       </text-banner>
       <!-- no pasar de esta línea -->
-    </default-page>
+    </base-page>
   </Layout>
 </template>
 
@@ -163,7 +163,7 @@
 
 <style lang="scss">
 
-.default-page {
+.base-page {
   background: $page-background-image;
   background-size: contain;
 }
@@ -195,7 +195,9 @@
   background-position: center center;
   height: rem(673px);
   padding-bottom: $gutter-large;
+  display: grid;
   .single-column {
+    align-items: end;
     @media only screen and (max-width: 768px) {
       grid-auto-rows: initial;
     }
@@ -203,6 +205,7 @@
   .message {
     text-align: center;
     font-family: $text-font;
+    width: 100%;
     h2 {
       color: white;
       font-weight: 600;
@@ -222,7 +225,7 @@
 }
 
 
-  .content__causes .left {
+  .content__causes .twins-section--start {
     @media only screen and (max-width: 768px) {
       width: 90% !important;
     }  
@@ -242,7 +245,7 @@
 }
 
 .choose-size {
-    h4 {
+    .title {
       color: white;
       text-transform: uppercase;
       font-weight: 900;
@@ -250,7 +253,7 @@
 }
 
 .perfect-ally {
-    h4 {
+    .title {
       color: #70c5c8;
       text-transform: uppercase;
       font-weight: 900;
@@ -271,7 +274,7 @@
     height: rem(320px);
     background-repeat: no-repeat;
     background-position: rem(300px);
-      h1 {
+      .title {
         color: #70c5c8;
         text-transform: uppercase;
         font-weight: 900;
@@ -323,14 +326,14 @@
         }
       }
     }
-    .left {
+    .twins-section--start {
       width: 70%;
       justify-self: end;
     }
   }
 
   &__help-your-son {
-    .left {
+    .twins-section--start {
       width: 70%;
       justify-self: end;
       @media only screen and (max-width: 768px) {
@@ -350,19 +353,19 @@
   }
 
   &__sizes {
-    .left {
+    .twins-section--start {
       width: 70%;
       justify-self: end;
     }
   }
 
   &__cori-morfi {
-      h1 {
+      .title {
         color: #f18b6c;
         text-transform: uppercase;
         font-weight: 900;
       }
-      h2 {
+      .subtitle {
         color: #f18b6c;
         font-weight: bold;
       }
@@ -451,9 +454,11 @@ ul {
   img {
     margin: 0 auto;
   }
-  a {
-    color: #70c5c8;
-    text-decoration: none;
+  p {
+      a {
+      color: #70c5c8;
+      text-decoration: none;
+    }
   }
 }
 

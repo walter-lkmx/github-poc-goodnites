@@ -1,17 +1,29 @@
 import DefaultLayout from '~/layouts/Default.vue';
 
-import SimpleHeader from '@lkmx/flare/src/components/headers/simple/SimpleHeader';
-import SimpleNavItem from '@lkmx/flare/src/components/navigation/simple/SimpleNavItem';
-import SimpleHero from '@lkmx/flare/src/components/heroes/SimpleHero';
-import TextBanner from '@lkmx/flare/src/components/blocks/TextBanner';
+// components
 
-import TwinColumns from '~/components/columns/TwinColumns.vue';
+import SimpleHeader from '@lkmx/flare/src/components/headers/simple-header/SimpleHeader';
 
-import NoColumn from '@lkmx/flare/src/components/columns/NoColumn';
-import SingleColumn from '@lkmx/flare/src/components/columns/SingleColumn';
-import SlimColumn from '@lkmx/flare/src/components/columns/SlimColumn';
+import TextBanner from '@lkmx/flare/src/components/blocks/text-banner/TextBanner';
 
-import DefaultPage from '~/layouts/pages/DefaultPage.vue';
+import SimpleNavItem from '@lkmx/flare/src/components/navigation/simple-navigation/SimpleNavItem';
+
+import SimpleHero from '@lkmx/flare/src/components/heroes/simple-hero/SimpleHero';
+
+import SimpleFooter from '@lkmx/flare/src/components/footers/simple-footer/SimpleFooter';
+
+
+// structures columns
+import NoColumn from '@lkmx/flare/src/structures/columns/no-column/NoColumn';
+import SingleColumn from '@lkmx/flare/src/structures/columns/single-column/SingleColumn';
+import SlimColumn from '@lkmx/flare/src/structures/columns/slim-column/SlimColumn';
+
+// structures pages
+import BasePage from '@lkmx/flare/src/structures/pages/base-page/BasePage';
+
+// structures columns
+import TwinColumns from '@lkmx/flare/src/structures/columns/twin-columns/TwinColumns';
+
 
 import '~/sass/styles.scss';
 
@@ -20,11 +32,12 @@ require('typeface-nunito');
 
 export default function (Vue, {router, head, isClient}) {
   Vue.component('Layout', DefaultLayout)
-  Vue.component('DefaultPage', DefaultPage);
+  Vue.component('BasePage', BasePage);
   Vue.component('SimpleHeader', SimpleHeader);
   Vue.component('SimpleNavItem', SimpleNavItem);
   Vue.component('SimpleHero', SimpleHero);
   Vue.component('TextBanner', TextBanner);
+  Vue.component('SimpleFooter', SimpleFooter);
 
   Vue.component('TwinColumns', TwinColumns);
   
