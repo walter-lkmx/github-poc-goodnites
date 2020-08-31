@@ -1,14 +1,42 @@
-# Default starter for Gridsome
+# Flare Static Site Generator starter
 
-This is the project you get when you run `gridsome create new-project`.
+## Local environment
 
-### 1. Install Gridsome CLI tool if you don't have
+### Prerrequisites
 
-`npm install --global @gridsome/cli`
+- Node.js 12
+- npm 6.14.1
 
-### 2. Create a Gridsome project
+#### Github token 
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+Your npm instanceneed to be logged in 
+
+1. Make sure you have access with a Github account to the LKMX flare repository at https://github.com/lkmx/flare
+
+2. Create a personal access token in your Github Account navigating to https://github.com/settings/tokens/new, making sure to select both **repo** and **read:packages**.
+
+![Github token settings](./docs/assets/token_settings.jpg)
+
+#### npm registry login
+
+Login to the npm registry using your Github username and the token generated in the previous step as the password, running:
+
+```
+npm login --registry=https://npm.pkg.github.com
+```
+
+#### Dependencies and local server
+
+Download the dependencies using
+
+```
+npm install
+```
+
+Run a live-reload local server running
+
+```
+gridsome develop
+```
+
+See the console for the local and network address to access the local server.

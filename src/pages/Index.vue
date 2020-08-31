@@ -8,9 +8,9 @@
         <g-image src="~/assets/logo.png" alt="Goodnites"></g-image>
       </template>
       <template v-slot:navigation>
-        <simple-nav-item :to="item.link" v-for="item in navigation.main" :key="item.key">
+        <g-link :to="item.link" v-for="item in navigation.main" :key="item.key">
           {{item.name}}
-        </simple-nav-item>
+        </g-link>
       </template>
       <template v-slot:actions>
 
@@ -161,8 +161,13 @@
   }
 </script>
 
-<style lang="scss">
 
+
+<style lang="scss">
+.grid {
+  // color: white;
+  background: green;
+}
 .base-page {
   background: $page-background-image;
   background-size: contain;
@@ -175,6 +180,9 @@
       height: rem(60px);
     }
   }
+  &__actions {
+    display: none;
+  }
 }
 
 .header .main-nav__primary {
@@ -183,6 +191,7 @@
   grid-column-gap: $gutter-xlarge;
   a {
     color: white;
+    text-decoration: none;
     &:hover {
       color: #70c5c8;
     }
@@ -206,6 +215,7 @@
     text-align: center;
     font-family: $text-font;
     width: 100%;
+    margin-top: 400px;
     h2 {
       color: white;
       font-weight: 600;

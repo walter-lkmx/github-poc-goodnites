@@ -1,11 +1,15 @@
 @import "tokens/text";
-@import "~@lkmx/flare/src/flare";
-// @import "~@lkmx/flare/src/components/headers/simple-header/simple-header";
-// @import "~@lkmx/flare/src/guides/space";
-
-
 @import "tokens/colors";
 @import "tokens/header";
 @import "tokens/twin-columns";
 @import "tokens/page";
+@import "~@lkmx/flare/src/flare";
 @import "tokens/hero";
+// @import "~@lkmx/flare/src/components/headers/simple-header/simple-header";
+// @import "~@lkmx/flare/src/guides/space";
+
+$grid-columns: 3 !default;
+$grid-row-gap: $gutter-xlarge !default;
+$grid-column-gap: $gutter !default;
+$grid-align-items: start !default;
+$grid-justify-items: start !default;

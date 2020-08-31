@@ -1,29 +1,5 @@
-import DefaultLayout from '~/layouts/Default.vue';
-
-// components
-
-import SimpleHeader from '@lkmx/flare/src/components/headers/simple-header/SimpleHeader';
-
-import TextBanner from '@lkmx/flare/src/components/blocks/text-banner/TextBanner';
-
-import SimpleNavItem from '@lkmx/flare/src/components/navigation/simple-navigation/SimpleNavItem';
-
-import SimpleHero from '@lkmx/flare/src/components/heroes/simple-hero/SimpleHero';
-
-import SimpleFooter from '@lkmx/flare/src/components/footers/simple-footer/SimpleFooter';
-
-
-// structures columns
-import NoColumn from '@lkmx/flare/src/structures/columns/no-column/NoColumn';
-import SingleColumn from '@lkmx/flare/src/structures/columns/single-column/SingleColumn';
-import SlimColumn from '@lkmx/flare/src/structures/columns/slim-column/SlimColumn';
-
-// structures pages
-import BasePage from '@lkmx/flare/src/structures/pages/base-page/BasePage';
-
-// structures columns
-import TwinColumns from '@lkmx/flare/src/structures/columns/twin-columns/TwinColumns';
-
+import DefaultLayout from '~/layouts/DefaultLayout.vue';
+import Flare from '@lkmx/flare/src/main'
 
 import '~/sass/styles.scss';
 
@@ -31,19 +7,9 @@ require('typeface-nunito');
 
 
 export default function (Vue, {router, head, isClient}) {
+  Vue.use(Flare)
   Vue.component('Layout', DefaultLayout)
-  Vue.component('BasePage', BasePage);
-  Vue.component('SimpleHeader', SimpleHeader);
-  Vue.component('SimpleNavItem', SimpleNavItem);
-  Vue.component('SimpleHero', SimpleHero);
-  Vue.component('TextBanner', TextBanner);
-  Vue.component('SimpleFooter', SimpleFooter);
-
-  Vue.component('TwinColumns', TwinColumns);
   
-  Vue.component('NoColumn', NoColumn);
-  Vue.component('SingleColumn', SingleColumn);
-  Vue.component('SlimColumn', SlimColumn);
 
   // Add a meta tag
   head.meta.push({
